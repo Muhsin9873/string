@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkString(str,start,end)
+         {
+           if(str.startsWith(start) && str.endsWith(end)) 
+               document.write('The string starts with',start,' and ends with ',end);
+
+          else if(str.startsWith(start)) 
+          document.write('The string starts with ',start,' and ends with ',end);
+
+          else if(str.endsWith(end))
+          document.write('The string starts does not with ',start,' but end with ',end);
+
+          else 
+          document.write('The string does not start with ',start,' and does not end with ',end);
+         }
+ 
+        let string = prompt('Enter a string: ');
+        let start=prompt('Enter the starting letter');
+        let end=prompt('Enter the Endinging letter');
+        checkString(string,start,end);
+    </script>
+</body>
+</html>
